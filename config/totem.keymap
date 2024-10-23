@@ -11,6 +11,7 @@
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 #define BASE 0
@@ -95,10 +96,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                         &kp Q  &kp W  &kp E    &kp R  &kp T                           &kp Y                            &kp U  &kp I      &kp O    &kp P
-                         &kp A  &kp S  &kp D    &kp F  &kp G                           &kp H                            &kp J  &kp K      &kp L    &kp SEMI
-&holdshft_tap LCTRL TAB  &kp Z  &kp X  &kp C    &kp V  &kp B                           &kp N                            &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp SQT
-                                       &kp DEL  &mo 1  &holdshft_tap RET LEFT_SHIFT    &holdshft_tap SPACE RIGHT_SHIFT  &mo 2  &kp BSPC
+                         &kp Q  &kp W  &kp E    &kp R  &kp T                             &kp Y                            &kp U  &kp I      &kp O    &kp P
+                         &kp A  &kp S  &kp D    &kp F  &kp G                             &kp H                            &kp J  &kp K      &kp L    &kp SEMI
+&holdshft_tap LCTRL TAB  &kp Z  &kp X  &kp C    &kp V  &kp B                             &kp N                            &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp SQT
+                                       &kp DEL  &mo 1  &holdshft_tap LEFT_SHIFT ENTER    &holdshft_tap RIGHT_SHIFT SPACE  &mo 2  &kp BSPC
             >;
         };
 
@@ -119,10 +120,10 @@
 
         layer_2 {
             bindings = <
-        &kp EXCLAMATION  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT    &kp CARET  &kp AMPERSAND  &kp STAR  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-        &trans           &trans  &trans    &trans      &trans         &trans     &trans         &trans    &trans                &trans
-&trans  &trans           &trans  &trans    &trans      &trans         &trans     &trans         &trans    &trans                &trans                 &kp UNDERSCORE
-                                 &trans    &trans      &trans         &trans     &trans         &trans
+        &kp EXCLAMATION  &kp AT  &kp HASH      &kp DOLLAR  &kp PERCENT    &kp CARET  &kp AMPERSAND  &kp STAR  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+        &trans           &trans  &trans        &trans      &trans         &trans     &trans         &trans    &trans                &trans
+&trans  &trans           &trans  &trans        &trans      &trans         &trans     &trans         &trans    &trans                &trans                 &kp UNDERSCORE
+                                 &bt BT_SEL 0  &trans      &trans         &trans     &trans         &trans
             >;
         };
     };
