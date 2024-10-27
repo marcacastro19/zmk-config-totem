@@ -106,10 +106,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                         &kp Q  &kp W  &kp E                     &kp R                       &kp T        &kp Y      &kp U                        &kp I      &kp O    &kp P
-                         &kp A  &kp S  &kp D                     &holdshft_tap LEFT_SHIFT F  &kp G        &kp H      &holdshft_tap RIGHT_SHIFT J  &kp K      &kp L    &kp SEMI
-&holdshft_tap LCTRL TAB  &kp Z  &kp X  &kp C                     &kp V                       &kp B        &kp N      &kp M                        &kp COMMA  &kp DOT  &kp FSLH  &kp SQT
-                                       &hold_layer_tap 3 ESCAPE  &mo 1                       &kp ENTER    &kp SPACE  &mo 2                        &kp BSPC
+                         &kp Q  &kp W  &kp E                     &kp R                       &kp T        &kp Y      &kp U                        &kp I       &kp O    &kp P
+                         &kp A  &kp S  &kp D                     &holdshft_tap LEFT_SHIFT F  &kp G        &kp H      &holdshft_tap RIGHT_SHIFT J  &kp K       &kp L    &kp SEMI
+&holdshft_tap LCTRL TAB  &kp Z  &kp X  &kp C                     &kp V                       &kp B        &kp N      &kp M                        &kp COMMA   &kp DOT  &kp FSLH  &kp SQT
+                                       &hold_layer_tap 3 ESCAPE  &mo 1                       &kp ENTER    &kp SPACE  &hold_layer_tap 2 BACKSPACE  &kp DELETE
             >;
         };
 
