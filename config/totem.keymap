@@ -32,16 +32,9 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_esc {
-            timeout-ms = <50>;
-            key-positions = <0 1>;
-            bindings = <&kp ESC>;
-        };
-
-        combo_tvp {
-            timeout-ms = <100>;
-            key-positions = <11 12 13>;
-            bindings = <&tog 0>;
+        backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <8 9>;
         };
     };
 
@@ -106,10 +99,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                         &kp Q  &kp W  &kp E                     &kp R  &kp T        &kp Y      &kp U                        &kp I       &kp O    &kp P
-                         &kp A  &kp S  &kp D                     &kp F  &kp G        &kp H      &kp J                        &kp K       &kp L    &kp SEMI
-&holdshft_tap LCTRL TAB  &kp Z  &kp X  &kp C                     &kp V  &kp B        &kp N      &kp M                        &kp COMMA   &kp DOT  &kp FSLH  &holdshft_tap RIGHT_SHIFT SQT
-                                       &hold_layer_tap 3 ESCAPE  &mo 1  &kp ENTER    &kp SPACE  &hold_layer_tap 2 BACKSPACE  &kp DELETE
+                              &kp Q  &kp W  &kp E                     &kp R  &kp T        &kp Y      &kp U                        &kp I       &kp O    &kp P
+                              &kp A  &kp S  &kp D                     &kp F  &kp G        &kp H      &kp J                        &kp K       &kp L    &kp SEMI
+&holdshft_tap LEFT_SHIFT TAB  &kp Z  &kp X  &kp C                     &kp V  &kp B        &kp N      &kp M                        &kp COMMA   &kp DOT  &kp FSLH  &holdshft_tap RIGHT_SHIFT SQT
+                                            &hold_layer_tap 3 ESCAPE  &mo 1  &kp ENTER    &kp SPACE  &hold_layer_tap 2 BACKSPACE  &kp DELETE
             >;
         };
 
