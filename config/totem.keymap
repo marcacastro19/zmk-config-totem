@@ -69,7 +69,17 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <120>;
+            tapping-term-ms = <160>;
+            flavor = "tap-preferred";
+        };
+
+        hold_layer_tap: hold_layer_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_LAYER_TAP";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <160>;
             flavor = "tap-preferred";
         };
     };
@@ -96,10 +106,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                         &kp Q  &kp W  &kp E         &kp R  &kp T                             &kp Y                            &kp U  &kp I      &kp O    &kp P
-                         &kp A  &kp S  &kp D         &kp F  &kp G                             &kp H                            &kp J  &kp K      &kp L    &kp SEMI
-&holdshft_tap LCTRL TAB  &kp Z  &kp X  &kp C         &kp V  &kp B                             &kp N                            &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp SQT
-                                       &lt 3 DELETE  &mo 1  &holdshft_tap LEFT_SHIFT ENTER    &holdshft_tap RIGHT_SHIFT SPACE  &mo 2  &kp BSPC
+                         &kp Q  &kp W  &kp E                     &kp R                       &kp T        &kp Y      &kp U                        &kp I      &kp O    &kp P
+                         &kp A  &kp S  &kp D                     &holdshft_tap LEFT_SHIFT F  &kp G        &kp H      &holdshft_tap RIGHT_SHIFT J  &kp K      &kp L    &kp SEMI
+&holdshft_tap LCTRL TAB  &kp Z  &kp X  &kp C                     &kp V                       &kp B        &kp N      &kp M                        &kp COMMA  &kp DOT  &kp FSLH  &kp SQT
+                                       &hold_layer_tap 3 ESCAPE  &mo 1                       &kp ENTER    &kp SPACE  &mo 2                        &kp BSPC
             >;
         };
 
@@ -121,7 +131,7 @@
         layer_2 {
             bindings = <
         &kp EXCLAMATION  &kp AT  &kp HASH      &kp DOLLAR  &kp PERCENT    &kp CARET  &kp AMPERSAND  &kp STAR  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-        &trans           &trans  &trans        &trans      &trans         &trans     &trans         &trans    &trans                &trans
+        &trans           &trans  &trans        &trans      &trans         &trans     &trans         &trans    &kp LEFT_WIN          &kp LEFT_ALT
 &trans  &trans           &trans  &trans        &trans      &trans         &trans     &trans         &trans    &trans                &trans                 &kp UNDERSCORE
                                  &bt BT_SEL 0  &trans      &trans         &trans     &trans         &trans
             >;
