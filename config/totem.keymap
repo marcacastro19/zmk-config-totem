@@ -103,10 +103,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                              &kp Q  &kp W  &kp E                         &kp R                  &kp T        &kp Y      &kp U                        &kp I       &kp O    &kp P
-                              &kp A  &kp S  &holdshft_tap LEFT_CONTROL D  &kp F                  &kp G        &kp H      &kp J                        &kp K       &kp L    &kp SEMI
-&holdshft_tap LEFT_SHIFT TAB  &kp Z  &kp X  &kp C                         &kp V                  &kp B        &kp N      &kp M                        &kp COMMA   &kp DOT  &kp FSLH  &holdshft_tap RIGHT_SHIFT SQT
-                                            &holdshft_tap LCTRL ESCAPE    &hold_layer_tap 1 TAB  &kp ENTER    &kp SPACE  &hold_layer_tap 2 BACKSPACE  &kp DELETE
+                              &kp Q                     &kp W                     &kp E                         &kp R                       &kp T        &kp Y      &kp U                        &kp I                  &kp O                     &kp P
+                              &holdshft_tap LEFT_ALT A  &holdshft_tap LEFT_GUI S  &holdshft_tap LEFT_CONTROL D  &holdshft_tap LEFT_SHIFT F  &kp G        &kp H      &holdshft_tap RIGHT_SHIFT J  &holdshft_tap LCTRL K  &holdshft_tap LEFT_GUI L  &holdshft_tap LEFT_ALT SEMICOLON
+&holdshft_tap LEFT_SHIFT TAB  &kp Z                     &kp X                     &kp C                         &kp V                       &kp B        &kp N      &kp M                        &kp COMMA              &kp DOT                   &kp FSLH                          &holdshft_tap RIGHT_SHIFT SQT
+                                                                                  &holdshft_tap LCTRL ESCAPE    &hold_layer_tap 1 TAB       &kp ENTER    &kp SPACE  &hold_layer_tap 2 BACKSPACE  &kp DELETE
             >;
         };
 
@@ -118,17 +118,17 @@
 
         layer_1 {
             bindings = <
-             &kp N1        &kp N2        &kp N3          &kp N4  &kp N5    &kp N6  &kp N7    &kp N8    &kp N9     &kp N0
-             &kp LEFT_ALT  &kp LEFT_GUI  &trans          &trans  &trans    &kp UP  &kp LEFT  &kp DOWN  &kp RIGHT  &trans
-&kp LC(TAB)  &bt BT_SEL 0  &trans        &trans          &trans  &trans    &trans  &trans    &trans    &trans     &trans  &kp MINUS
-                                         &bt BT_CLR_ALL  &trans  &trans    &trans  &trans    &trans
+             &kp N1        &kp N2        &kp N3     &kp N4    &kp N5     &kp N6  &kp N7    &kp N8    &kp N9     &kp N0
+             &kp LEFT_ALT  &kp LEFT_GUI  &trans     &kp HOME  &kp END    &kp UP  &kp LEFT  &kp DOWN  &kp RIGHT  &trans
+&kp LC(TAB)  &bt BT_SEL 0  &trans        &trans     &trans    &trans     &trans  &trans    &trans    &trans     &trans  &kp MINUS
+                                         &kp TILDE  &trans    &trans     &trans  &trans    &trans
             >;
         };
 
         layer_2 {
             bindings = <
         &kp EXCLAMATION  &kp AT  &kp HASH      &kp DOLLAR  &kp PERCENT    &kp CARET  &kp AMPERSAND  &kp STAR  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-        &trans           &trans  &trans        &trans      &trans         &trans     &trans         &trans    &kp LEFT_WIN          &kp LEFT_ALT
+        &kp F1           &kp F2  &kp F3        &kp F4      &kp F5         &kp F6     &kp F7         &kp F8    &kp F9                &kp F10
 &trans  &trans           &trans  &trans        &trans      &trans         &trans     &trans         &trans    &trans                &trans                 &kp UNDERSCORE
                                  &bt BT_SEL 0  &trans      &trans         &trans     &trans         &trans
             >;
