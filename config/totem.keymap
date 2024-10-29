@@ -13,6 +13,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/mouse.h>
 
 #define BASE 0
 #define NAV  1
@@ -140,6 +141,15 @@
              &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans    &trans  &kp N4  &kp N5  &kp N6  &kp MINUS
 &bootloader  &trans  &trans    &trans    &trans     &trans    &trans  &kp N1  &kp N2  &kp N3  &kp EQUAL  &bootloader
                                &trans    &trans     &trans    &trans  &kp N0  &trans
+            >;
+        };
+
+        mouse {
+            bindings = <
+        &trans  &trans          &mmv MOVE_UP    &trans           &trans    &trans  &trans    &trans    &trans    &trans
+        &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans    &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
+&trans  &trans  &trans          &trans          &trans           &trans    &trans  &trans    &trans    &trans    &trans  &trans
+                                &trans          &trans           &trans    &trans  &trans    &trans
             >;
         };
     };
