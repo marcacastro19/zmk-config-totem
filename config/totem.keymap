@@ -67,6 +67,7 @@
             flavor = "balanced";
             quick-tap-ms = <175>;
             require-prior-idle-ms = <120>;
+            hold-trigger-on-release;
         };
 
         hold_layer_tap: hold_layer_tap {
@@ -79,6 +80,7 @@
             flavor = "balanced";
             quick-tap-ms = <175>;
             require-prior-idle-ms = <120>;
+            hold-trigger-on-release;
         };
     };
 
