@@ -31,14 +31,7 @@
 };
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        backspace {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <8 9>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     macros {
         gif: gif {
