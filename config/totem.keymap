@@ -51,9 +51,9 @@
     };
 
     behaviors {
-        holdshft_tap: holdshft_tap {
+        hm_ctrl: hm_ctrl {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOLDSHFT_TAP";
+            label = "HM_CTRL";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
@@ -75,6 +75,20 @@
             quick-tap-ms = <175>;
             require-prior-idle-ms = <120>;
             hold-trigger-on-release;
+        };
+
+        hm_r: hm_r {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HM_R";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            flavor = "balanced";
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <120>;
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <0 1 2 3 4 11 12 13 14 22 23 24 25 10 21>;
         };
     };
 
@@ -100,10 +114,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                &holdshft_tap LEFT_ALT Q  &holdshft_tap LEFT_GUI W  &holdshft_tap LEFT_CONTROL E  &kp R    &kp T                      &kp Y                    &kp U          &holdshft_tap LEFT_CONTROL I  &holdshft_tap LEFT_GUI O  &holdshft_tap LEFT_ALT P
-                &kp A                     &kp S                     &kp D                         &kp F    &kp G                      &kp H                    &kp J          &kp K                         &kp L                     &kp SEMI
-&kp LEFT_SHIFT  &kp Z                     &kp X                     &kp C                         &kp V    &kp B                      &kp N                    &kp M          &kp COMMA                     &kp DOT                   &kp FSLH                  &holdshft_tap RIGHT_SHIFT SQT
-                                                                    &kp ESCAPE                    &kp TAB  &hold_layer_tap 3 ENTER    &hold_layer_tap 2 SPACE  &kp BACKSPACE  &kp DELETE
+                &kp Q  &kp W  &hm_ctrl LEFT_CONTROL E  &kp R    &kp T                      &kp Y                    &kp U          &hm_ctrl LEFT_CONTROL I  &kp O    &kp P
+                &kp A  &kp S  &kp D                    &kp F    &kp G                      &kp H                    &kp J          &kp K                    &kp L    &kp SEMI
+&kp LEFT_SHIFT  &kp Z  &kp X  &kp C                    &kp V    &kp B                      &kp N                    &kp M          &kp COMMA                &kp DOT  &kp FSLH  &hm_r RIGHT_SHIFT SQT
+                              &kp ESCAPE               &kp TAB  &hold_layer_tap 1 ENTER    &hold_layer_tap 2 SPACE  &kp BACKSPACE  &kp DELETE
             >;
         };
 
