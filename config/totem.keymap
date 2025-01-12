@@ -35,13 +35,13 @@
         compatible = "zmk,combos";
 
         ctrl_l {
-            bindings = <&kp LCTRL>;
-            key-positions = <10 11>;
+            bindings = <&sk LCTRL>;
+            key-positions = <11 12>;
         };
 
         ctrl_r {
-            bindings = <&kp LCTRL>;
-            key-positions = <18 19>;
+            bindings = <&sk LCTRL>;
+            key-positions = <18 17>;
         };
     };
 
