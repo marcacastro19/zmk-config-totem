@@ -34,6 +34,9 @@
     release-after-ms = <1500>;
 };
 
+&caps_word {
+};
+
 / {
     combos {
         compatible = "zmk,combos";
@@ -137,6 +140,12 @@
         and {
             bindings = <&kp AMPERSAND>;
             key-positions = <5 6>;
+            require-prior-idle-ms = <150>;
+        };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <12 13>;
             require-prior-idle-ms = <150>;
         };
     };
