@@ -83,7 +83,7 @@
             require-prior-idle-ms = <150>;
         };
 
-        equals {
+        minus {
             bindings = <&kp MINUS>;
             key-positions = <16 17>;
             require-prior-idle-ms = <150>;
