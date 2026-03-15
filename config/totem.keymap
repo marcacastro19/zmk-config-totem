@@ -37,6 +37,12 @@
 &caps_word {
 };
 
+&mmv {
+};
+
+&msc {
+};
+
 / {
     combos {
         compatible = "zmk,combos";
