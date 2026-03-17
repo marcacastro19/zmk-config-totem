@@ -154,18 +154,6 @@
             key-positions = <16 18>;
             require-prior-idle-ms = <150>;
         };
-
-        ctrl_l {
-            bindings = <&kp LEFT_CONTROL>;
-            key-positions = <11 12>;
-            require-prior-idle-ms = <150>;
-        };
-
-        ctrl_r {
-            bindings = <&kp LEFT_CONTROL>;
-            key-positions = <17 18>;
-            require-prior-idle-ms = <150>;
-        };
     };
 
     macros {
